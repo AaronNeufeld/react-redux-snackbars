@@ -1,0 +1,76 @@
+{
+  "name": "@aneuf/react-redux-snackbars",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Neufeld",
+    "email": "aaron.neufeld@uwaterloo.ca"
+  },
+  "keywords": [
+    "react redux snackbar",
+    "react",
+    "redux",
+    "reactjs",
+    "snackbar",
+    "snackbars",
+    "toaster",
+    "toastr",
+    "toasts",
+    "toast messages",
+    "material design",
+    "material ui"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
+  },
+  "dependencies": {
+    "notistack": "^0.9.17",
+    "react-error-boundary": "^2.2.1",
+    "shortid": "^2.2.15"
+  },
+  "main": "dist/index.js",
+  "module": "dist/react-redux-snackbars.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/object.omit": "^3.0.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/shortid": "^0.0.29",
+    "husky": "^4.2.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.2"
+  }
+}
